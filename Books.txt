@@ -1,0 +1,5 @@
+1;Harry Potter;Jk Rowling;1;;15-04-2024
+2;11 Rules for Life;Cheatan Bhagat;1;;15-04-2024
+3;Winner's Mindset;Shane Watson;0;ish;17-04-2024
+4;Dune;Frank Herbert;0;ansh;08-04-2024
+1905;The Silent Patient;Alex Micheleids;1;;
