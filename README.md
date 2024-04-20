@@ -1,11 +1,11 @@
 # Library Management System
  
- This project is a Library Management System designed for college first-year Python projects. It leverages several Python libraries to create a modern, user-friendly GUI for managing books and user accounts in a library setting.
+ This project is a Library Management System designed for college first-year Python projects. It leverages several Python libraries to create a modern, user-friendly GUI for managing books and user accounts in a library setting. It is not designed for actual deployment.
  
  ## Libraries Used
  
  -   `tkinter`: Standard GUI library for Python.
- -   `customtkinter`: Provides customizable widgets for a more modern UI design.
+ -   `customtkinter`: UI-library based on Tkinter.
  -   `hashlib`: Used for secure hashing of passwords.
  -   `datetime`: Utilized for managing date operations.
  
@@ -19,17 +19,17 @@
  ### User Interface Components
  
  -   **Login and Account Creation**:
-     -   Enforces username and password requirements for new accounts.
+     -   Enforces username and password requirements for new accounts 
+        - 3 character user id and 8 character password.
+        - Checks for duplicate username
      -   Passwords are hashed using SHA256 before storage for security.
      -   Login validation checks the hashed password against the stored hash.
- -   **Navigational Buttons**:
-     -   Buttons to navigate between login, account creation, user, and admin pages.
-     -   Functionalities like logout and returning to the login page for ease of navigation.
  
  ### Book Management
  
  -   **Admin Functionalities**:
      -   Add new books with details like ID, name, and author.
+        - Checks for if the same ID already exists before adding.
      -   Delete books with confirmation prompts to prevent accidental deletions.
      -   Edit book details.
  -   **User Functionalities**:
@@ -41,8 +41,7 @@
  ### GUI Layout
  
  -   **Main Window**:
-     -   Configured with `customtkinter` for a consistent look and feel.
-     -   Supports dynamic resizing and modern widget styling.
+     -   Configured with `customtkinter` for a Modern look and feel.
  -   **Tables for Books**:
      -   Displayed using `Treeview` from `tkinter.ttk`, styled to match the customtkinter aesthetics.
      -   Columns for book details like ID, name, author, status, issuer, and the last issue date.
