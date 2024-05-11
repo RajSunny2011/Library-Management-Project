@@ -22,6 +22,5 @@ IF EXIST "requirements.txt" (
 )
 
 ECHO Setup complete.
-ECHO The virtual environment is now active. You can deactivate it by typing 'deactivate'.
-ECHO.
+ECHO The virtual environment is now active.
 pause

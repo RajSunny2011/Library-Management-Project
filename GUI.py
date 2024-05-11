@@ -35,14 +35,13 @@ class LibraryApp(ctk.CTk):
         admin_password_page.title("Create Admin Account")
         password_entry = ctk.CTkEntry(master=admin_password_page, placeholder_text="Admin Password", show="*")
         password_entry.pack(pady=20)
-        submit_button = ctk.CTkButton(master=admin_password_page, text="Create", command=lambda: self.submit_admin_password(password_entry.get(), user_file, admin_password_page))
+        submit_button = ctk.CTkButton(master=admin_password_page, text="Create", command=lambda: [self.submit_admin_password(password_entry.get(), user_file), admin_password_page.destroy()])
         submit_button.pack()
         admin_password_page.mainloop()
 
-    def submit_admin_password(self, password, user_file, window):
+    def submit_admin_password(self, password, user_file):
         hashed = hashlib.sha256(password.encode()).hexdigest()
         user_file.write(f"Admin;{hashed};0,0,0\n")
-        window.destroy()
 
     def login_page(self):
         self.clear_screen()
