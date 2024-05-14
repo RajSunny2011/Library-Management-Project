@@ -3,6 +3,7 @@ REM Batch script to set up a Python virtual environment and install required pac
 
 REM Set the virtual environment name
 SET VENV_NAME=.env
+REM If changed change the value in RunLMS.bat too
 
 REM Check if the virtual environment folder exists
 IF NOT EXIST "%VENV_NAME%" (

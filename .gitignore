@@ -162,3 +162,7 @@ cython_debug/
 # Custom
 Books.txt
 Users.txt
+test.db
+library.db
+test.py
+.vscode
